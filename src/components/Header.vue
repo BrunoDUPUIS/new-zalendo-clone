@@ -4,7 +4,7 @@
       <div class="container">
         <p>Essayez d'abord, <span>payez après</span></p>
         <p>LIVRAISON & RETOUR <span>GRATUITS *</span></p>
-        <p>Retour et <span>remboursements</span></p>
+        <p>Retour et <span>remboursement</span></p>
       </div>
     </div>
     <div class="headerBottom">
@@ -16,9 +16,9 @@
         </nav>
         <img src="../assets/img/logo_zalendo.svg" alt="logo-zalendo" />
         <nav>
-          <p>icone 1</p>
-          <p>icone 2</p>
-          <p>icone 3</p>
+          <font-awesome-icon :icon="['far', 'user']" />
+          <font-awesome-icon :icon="['far', 'heart']" />
+          <font-awesome-icon :icon="['fas', 'shopping-bag']" />
         </nav>
       </div>
     </div>
@@ -52,6 +52,16 @@ span {
   align-items: center;
   height: var(--header-bottom-height);
 }
+svg {
+  color: var(--main-black);
+  border: solid 2px white;
+  padding: 10px;
+}
+svg:hover {
+  border: solid 2px black;
+  cursor: pointer;
+}
+
 /* ------LOGO-ZALENDO------ */
 
 img {
